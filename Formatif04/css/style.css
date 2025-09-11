@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #ffd166;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 25px 0 15px;
+    color: #06d6a0;
+    border-bottom: 2px solid #06d6a0;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 20px 0 10px;
+    color: #118ab2;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.code-example {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 15px 0;
+    overflow-x: auto;
+    font-family: 'Consolas', monospace;
+    border-left: 4px solid #06d6a0;
+}
+
+.interactive-demo {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+button {
+    background: #ef476f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff6b8b;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+    width: 200px;
+}
+
+.output {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    min-height: 50px;
+}
+
+.dom-example {
+    border: 2px dashed #06d6a0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.dom-element {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(6, 214, 160, 0.2);
+    border-radius: 6px;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.list-item {
+    padding: 10px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}

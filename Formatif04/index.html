@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice JavaScript & DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Exercice JavaScript & DOM</h1>
+    <p class="intro">Exemple interactive de JavaScript et DOM</p>
+  </header>
+
+  <h2>Exercices</h2>
+
+  <div class="interactive-demo">
+    <h3>DOM - Example</h3>
+    <p>Essayez le traitement dynamique de DOM :</p>
+
+    <div class="dom-example">
+      <div id="demo-element" class="dom-element">
+        Démonstration. Essayez les buttons ci-dessous pour me modifier!
+      </div>
+
+      <button onclick="changeContent()">Change le Conteu</button>
+      <button onclick="changeColor()">Change de Couleur</button>
+      <button onclick="addItem()">Ajouter un Item à la liste</button>
+      <button onclick="removeItem()">Supprimer un Item à la liste</button>
+    </div>
+
+    <div class="output">
+      <p id="output-text">Output sera affiché ici...</p>
+    </div>
+
+    <h3>Calculatrice</h3>
+    <div>
+      <input type="number" id="num1" placeholder="premier nombre">
+      <input type="number" id="num2" placeholder="deuxième nombre">
+      <select id="opération">
+        <option value="add">Addition</option>
+        <option value="subtract">Soustarction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+      </select>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="output">
+      <p id="calc-result">Le Résultat sera affiché ici...</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Merci pour votre participation</p>
+</footer>
+
+<script src = "js/script.js"></script>
+</body>
+</html>
